@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/styles_login.css"/> 
+<body>
+    <div class="login-container">
+        Register
+        <br> <br>
+        <form action="action/register.php" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" ><br><br>
+            <label for="rassword">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="password_confirmation">Password Confirmation:</label><br>
+            <input type="password" id="password_confirmation" name="password_confirmation"><br><br>
+            <label for="role">Role</label><br>
+            <select name="role" id="role" class="form-control select2">
+                <option name="role" id="role" value="">---Select Role---</option>
+                <option name="role" id="role" value="admin"> admin </option>
+                <option name="role" id="role" value="editor"> editor </option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <br> 
+</body>
+</html>
